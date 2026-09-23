@@ -1,27 +1,25 @@
 # Leetcode
 Solutions to LeetCode problems for practicing and improving problem-solving, algorithms, and data structures.
 
-# LeetCode Solutions
+Repository containing my solutions to **LeetCode** problems, organized by difficulty and topic.
 
-Repositório com minhas soluções para problemas do **LeetCode**, organizadas por dificuldade e tema.
+The goal is to practice **data structures, algorithms, programming logic, and problem-solving**, while also tracking my progress throughout my studies.
 
-O objetivo é praticar **estruturas de dados, algoritmos, lógica de programação e resolução de problemas**, além de acompanhar minha evolução nos estudos.
-
-### Conteúdos
+### Contents
 
 * 🟢 Easy
 * 🟡 Medium
 * 🔴 Hard
-* Arrays e Strings
+* Arrays and Strings
 * Linked Lists
 * Hash Tables
-* Stacks e Queues
-* Trees e Graphs
+* Stacks and Queues
+* Trees and Graphs
 * Dynamic Programming
-* Sorting e Searching
-* Outros algoritmos e estruturas de dados
+* Sorting and Searching
+* Other algorithms and data structures
 
-Cada solução busca apresentar uma abordagem clara, eficiente e fácil de entender.
+Each solution aims to provide a clear, efficient, and easy-to-understand approach.
 
-> Em constante atualização conforme novos problemas são resolvidos.
+> Continuously updated as new problems are solved.
 
