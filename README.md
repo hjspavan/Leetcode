@@ -6,9 +6,7 @@ The goal is to practice **data structures, algorithms, programming logic, and pr
 
 ### Contents
 
-* 🟢 Easy
-* 🟡 Medium
-* 🔴 Hard
+
 * Arrays and Strings
 * Linked Lists
 * Hash Tables
