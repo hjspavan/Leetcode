@@ -1,0 +1,50 @@
+
+from functools import cache
+
+class Solution:
+    def hasValidPath(self, A: list[list[str]]) -> bool:
+        rows = len(A)
+        cols = len(A[0])
+
+        # O caminho precisa ter quantidade par de caracteres
+        if (rows + cols) % 2 == 0:
+            return False
+
+        # O caminho precisa começar com '(' e terminar com ')'
+        if A[0][0] == ')' or A[-1][-1] == '(':
+            return False
+
+        @cache
+        def dfs(row, col, balance):
+            # Atualiza o balanceamento
+            if A[row][col] == '(':
+                balance += 1
+            else:
+                balance -= 1
+
+            # Nunca podemos ter mais ')' do que '('
+            if balance < 0:
+                return False
+
+            # Verifica se ainda existe espaço suficiente
+            # para fechar todos os '(' abertos
+            remaining = (rows - 1 - row) + (cols - 1 - col)
+
+            if balance > remaining:
+                return False
+
+            # Chegamos ao final
+            if row == rows - 1 and col == cols - 1:
+                return balance == 0
+
+            # Podemos andar para baixo ou para a direita
+            if row < rows - 1 and dfs(row + 1, col, balance):
+                return True
+
+            if col < cols - 1 and dfs(row, col + 1, balance):
+                return True
+
+            return False
+
+        return dfs(0, 0, 0)
+
