@@ -10,3 +10,4 @@ class Solution:
                 ans[i] = depth % 2
                 depth -= 1
         return ans
+
