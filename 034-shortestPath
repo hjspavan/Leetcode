@@ -7,7 +7,7 @@ class Solution:
         best = [k + 1] * n  
         heap = [(0, 1, 0)]  
         while heap:
-            d, run, x = heappop(heap)
+            d, run, x = heap(heap)
             if run >= best[x]:  
                 continue
             if x == n - 1:
